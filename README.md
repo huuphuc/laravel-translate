@@ -78,7 +78,7 @@ $pageModel->update([
 
 **How to install it?**
 ```bash
-composer install huuphuc/translate
+composer require huuphuc/translate
 ```
 
 **Manual install**
