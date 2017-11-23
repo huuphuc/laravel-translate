@@ -1,7 +1,7 @@
 # laravel-translate
 
 A simple way to make multilanguage system using eloquent.
-Restricting source code changes.
+Restricting your source code changes.
 
 **- A simple exsample: we already have that table**
 ```mysql
@@ -86,12 +86,12 @@ $pageModel->update([
 
 **- How to install it?**
 ```bash
-composer require huuphuc/translate
+composer require huuphuc/translate:dev-master
 ```
 
 **- Manual install**
 Just copy Translatable.php to any where in your project.
 
-Have fun. It not best solution but simple and I don't need to change my code much.
+Have fun. It not the best solution but simple and I don't need to change my code much.
 
 
