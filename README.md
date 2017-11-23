@@ -3,7 +3,7 @@
 A simple way to make multilanguage system using eloquent.
 Restricting source code changes.
 
-**A simple exsample: we already have that table**
+**- A simple exsample: we already have that table**
 ```mysql
 CREATE TABLE `pages` (
   `id` int(10) UNSIGNED NOT NULL,
@@ -22,7 +22,9 @@ ALTER TABLE `pages`
 ```
 
 So now we will make another table to contain "translate" of this table.
-**New table we need to make**
+
+
+**- New table we need to make**
 ```mysql
 CREATE TABLE `pages_trans` (
   `id` int(10) UNSIGNED NOT NULL,
@@ -38,7 +40,8 @@ ALTER TABLE `pages_trans`
 
 that table look like same with our original table. Every field you want "translate" it, put it to "pages_trans" table; and we use "_locale" field to store language code for "translation". Just remember that primary key of "pages_trans" is primary key of "pages".
 
-**Next we update our model**
+
+**- Next we update our model**
 ```php
 namespace App\Models;
 
@@ -54,7 +57,9 @@ class Page extends Model {
 }
 ```
 add Translatable train to your model
-**Now you can use translate function any where you need**
+
+
+**- Now you can use translate function any where you need**
 ```php
 $pageModel->trans('jp');
 echo $pageModel->title; // echo japanese
@@ -62,7 +67,9 @@ $pageModel->trans('xyz');
 echo $pageModel->title; // echo xyz language ...
 ```
 of course if you don't have "translation" yet, default data will be use.
-**And update your "translation"**
+
+
+**- And update your "translation"**
 ```php
 $pageModel->trans('vi');
 $pageModel->title = "Xin chào";
@@ -76,14 +83,15 @@ $pageModel->update([
 ]);
 ```
 
-**How to install it?**
+
+**- How to install it?**
 ```bash
 composer require huuphuc/translate
 ```
 
-**Manual install**
+**- Manual install**
 Just copy Translatable.php to any where in your project.
 
-**Have fun**
+Have fun. It not best solution but simple and I don't need to change my code much.
 
 
