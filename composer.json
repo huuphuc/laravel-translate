@@ -2,7 +2,6 @@
     "name": "huuphuc/translate",
     "description": "A simple way to multilanguage laravel eloquent",
     "license": "MIT",
-    "version": "0.1.0",
     "keywords": [
         "multilanguage",
         "translate",
@@ -13,7 +12,7 @@
         {
             "type": "git",
             "url": "https://github.com/huuphuc/laravel-translate"
-        },
+        }
     ],
     "authors": [
         {
@@ -24,7 +23,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Huuphuc\\Translate": "src/"
+            "Huuphuc\\Translate\\": "src/"
         }
     },
     "minimum-stability": "dev"
