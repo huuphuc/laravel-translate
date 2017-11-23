@@ -1,0 +1,17 @@
+{
+    "name": "huuphuc/translate",
+    "description": "A simple way to multilanguage laravel eloquent",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Huu Phuc",
+            "email": "phucbkit@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-0": {
+            "Huuphuc\\Translate": "src/"
+        }
+    }
+}
